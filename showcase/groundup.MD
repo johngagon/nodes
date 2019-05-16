@@ -1,3 +1,9 @@
+git clone https://github.com/johngagon/nodes.git
+cat > .gitignore
+.gitignore
+node_modules
+Ctrl-Z
+
 mkdir showcase
 npm init
 #(enter, enter ..)
