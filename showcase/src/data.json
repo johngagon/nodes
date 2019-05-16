@@ -1,0 +1,177 @@
+{
+  "menu": [
+    {
+      "name": "Breakfast"
+    },
+
+    {
+      "name": "Lunch"
+    },
+
+    {
+      "name": "Dinner"
+    }
+  ],
+
+  "inventory": [
+    {
+      "name": "eggs",
+
+      "qty": 20
+    },
+
+    {
+      "name": "steak",
+
+      "qty": 25
+    },
+
+    {
+      "name": "lettuce",
+
+      "qty": 10
+    },
+
+    {
+      "name": "ham",
+
+      "qty": 22
+    },
+
+    {
+      "name": "potato",
+
+      "qty": 30
+    },
+
+    {
+      "name": "bread",
+
+      "qty": 17
+    }
+  ],
+
+  "entree": [
+    {
+      "id": 101,
+
+      "name": "Lumberjack Breakfast",
+
+      "menu": "Breakfast"
+    },
+
+    {
+      "id": 102,
+
+      "name": "Sunshine Egg on Toast",
+
+      "menu": "Breakfast"
+    },
+
+    {
+      "id": 201,
+
+      "name": "Chef Salad",
+
+      "menu": "Lunch"
+    },
+
+    {
+      "id": 301,
+
+      "name": "Steak and Potatos",
+
+      "menu": "Dinner"
+    }
+  ],
+
+  "entreeIngredients": [
+    {
+      "entree": 101,
+
+      "ingredient": "egg",
+
+      "qty": 3
+    },
+
+    {
+      "entree": 101,
+
+      "ingredient": "bread",
+
+      "qty": 2
+    },
+
+    {
+      "entree": 101,
+
+      "ingredient": "ham",
+
+      "qty": 1
+    },
+
+    {
+      "entree": 101,
+
+      "ingredient": "potato",
+
+      "qty": 1
+    },
+
+    {
+      "entree": 102,
+
+      "ingredient": "egg",
+
+      "qty": 1
+    },
+
+    {
+      "entree": 102,
+
+      "ingredient": "bread",
+
+      "qty": 1
+    },
+
+    {
+      "entree": 201,
+
+      "ingredient": "ham",
+
+      "qty": 1
+    },
+
+    {
+      "entree": 201,
+
+      "ingredient": "lettuce",
+
+      "qty": 1
+    },
+
+    {
+      "entree": 201,
+
+      "ingredient": "egg",
+
+      "qty": 1
+    },
+
+    {
+      "entree": 301,
+
+      "ingredient": "steak",
+
+      "qty": 1
+    },
+
+    {
+      "entree": 301,
+
+      "ingredient": "potato",
+
+      "qty": 1
+    }
+  ]
+}
