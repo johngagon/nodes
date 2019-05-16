@@ -1,0 +1,17 @@
+{
+  "name": "showcase",
+  "version": "1.0.0",
+  "description": "To showcase material ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
+    "react": "^16.8.6",
+    "typeface-roboto": "0.0.54"
+  }
+}
