@@ -1,3 +1,6 @@
+Do the clone first. Make sure you know your password.
+Open up the folder once cloned. commit then Push
+
 git clone https://github.com/johngagon/nodes.git
 cat > .gitignore
 .gitignore
