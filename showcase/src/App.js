@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <Card>
-      <Typography>{title}</Typography>
+      <Typography variant="h3" gutterBottom>{title}</Typography>
       </Card>
       <Divider light/>
       <Paper>
