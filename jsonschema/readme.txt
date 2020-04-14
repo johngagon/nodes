@@ -41,11 +41,12 @@ class App extends React.Component {
     )
   }
 }
-
 export default App;
 
 3. create the json schema     (start with simple stuff, then work up to bigger)
   externalize
+  https://stackoverflow.com/questions/33650399/es6-modules-implementation-how-to-load-a-json-file/33650470#33650470
+import todo from 'json!../suburbs.json';
 
 4. install React Router and make a simple menu with it.
 

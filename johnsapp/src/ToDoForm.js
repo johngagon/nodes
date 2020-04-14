@@ -1,31 +1,35 @@
 import React from "react";
 import Form from 'react-jsonschema-form'; //Note: not import Form from "@rjsf/core";
 
-import schema from './todo-schema.json';
-
-const log = (type) => console.log.bind(console, type);
-const onSubmit = ({formData}, e) => console.log("Data submitted: ",  formData);
-const onChange = () => {console.log('changed')};
-const onError = () => {console.log('error')};
+const schema = {
+  title: "Todo",
+  type: "object",
+  required: ["title"],
+  properties: {
+    title: {type: "string", title: "Title", default: "A new task"},
+    done: {type: "boolean", title: "Done?", default: false}
+  }
+};
 const formData = {
   title: "First task",
-  done: false
+  done: true
 };
+const onSubmit = ({formData}, e) => console.log("Data submitted: ",  formData);
+const log = (type) => console.log.bind(console, type);
 
 class App extends React.Component {
   render() {
-    log("render");
     return (
       <Form schema={schema}
       formData={formData}
-      onChange={onChange}
+      onChange={log("changed")}
       onSubmit={onSubmit}
-      onError={onError} />
+      onError={log("errors")} />
     )
   }
 }
 
-export default App;
+export default ToDoForm;
 
 
 /*
