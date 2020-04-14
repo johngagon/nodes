@@ -1,21 +1,28 @@
 import React from "react";
 import Form from 'react-jsonschema-form'; 
+import methods from './methods';
 
-const onChange = ({formData}, e) => console.log("Data changed: ",  formData);
+const {PUT, POST} = methods;
+// Spammy: const onChange = ({formData}, e) => console.log("Data changed: ",  formData);
+const onChange = ({formData}, e) => {};
 const onError = (errors) => console.log("I have", errors.length, "errors to fix");
 
 class GeneralForm extends React.Component {
   
   onSave (formData, data, e) {
-    const {setData} = this.props;
+    const {setData, callApi, schema} = this.props;
     const found = data.findIndex(item => item.title === formData.title );
     if(found !== -1){
       const newData = data.map((item, index) => {
         return index === found ? formData : item;
       });
       setData(data => newData);
+      const getUrl = `${schema.title}`;
+      callApi(PUT, getUrl);      
     }else{
       setData(data => data.concat(formData));
+      const getUrl = `${schema.title}`;
+      callApi(POST, getUrl);      
     }
     console.log("Data submitted: ",  formData);
   }

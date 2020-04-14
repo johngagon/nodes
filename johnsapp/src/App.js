@@ -13,11 +13,11 @@ import initData from './init-data.json';
 
 /* 
 e.g.:
-POST:  /todo (body {})  200 body {id:}             //can't add, (not unique somehow)
+POST:  /todo (body {})  200 body {id:}             //error -> e.g.: can't add, (not unique somehow)
 GET:   /todo,           200 body {[{},{},..]} 
 GET"   /todo/:id        200 body {{}}
-DELETE /todo/:id        200                        //can't find
-PUT    /todo/:id        200                        //can't find, can't do
+DELETE /todo/:id        200                        //error -> e.g.: can't find
+PUT    /todo/:id        200                        //error -> e.g.: can't find, can't update
 
 TODO implement real api call
 */
@@ -67,6 +67,7 @@ export default function App() {
                 schema={toDoSchema}
                 data={data}
                 setData={setData}
+                callApi={callApi}
               />        
           </Route>
           <Route path="/about">

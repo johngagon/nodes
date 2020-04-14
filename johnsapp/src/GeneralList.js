@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import GeneralForm from './GeneralForm';
 import methods from './methods';
-const {DELETE} = methods;
+const {GET, DELETE} = methods;
 
 class GeneralList extends React.Component {
 
@@ -22,8 +22,10 @@ class GeneralList extends React.Component {
   }
 
   render() {
-    const {schema, data, setData} = this.props;
-    
+    const {schema, data, setData, callApi} = this.props;
+    const getUrl = `${schema.title}`;
+    callApi(GET, getUrl);
+
     const renderedList = data.map((row, idx) => {
       // TODO if task is done, don't allow delete, also, replace button with nice icon
       return (
@@ -37,7 +39,7 @@ class GeneralList extends React.Component {
           <ul>{renderedList}</ul>
           <Switch>
             <Route exact path="/form/:id" 
-              render={(props) => <GeneralForm {...props} data={data} schema={schema} setData={setData}/>}/>
+              render={(props) => <GeneralForm {...props} data={data} schema={schema} setData={setData} callApi={callApi}/>}/>
           </Switch>
         </Router>
         
