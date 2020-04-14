@@ -2,7 +2,7 @@ Start with basic crud, then go bigger (like done with groovy accounting)
 
 https://react-jsonschema-form.readthedocs.io/en/latest/
 
-1. create react app
+x 1. create react app
 (you may need to follow the uninstall directions)
 https://create-react-app.dev/docs/getting-started
 
@@ -14,7 +14,7 @@ https://create-react-app.dev/docs/getting-started
 
 
 
-2. install the forms
+x 2. install the forms
 https://react-jsonschema-form.readthedocs.io/en/latest/
 npm install react-jsonschema-form --save
 (backup) and empty out App.js, replace with the sample 
@@ -43,28 +43,61 @@ class App extends React.Component {
 }
 export default App;
 
-3. create the json schema     (start with simple stuff, then work up to bigger)
-  externalize
-  https://stackoverflow.com/questions/33650399/es6-modules-implementation-how-to-load-a-json-file/33650470#33650470
-import todo from 'json!../suburbs.json';
+x 3. create the json schema     (start with simple stuff, then work up to bigger)
+  externalize from the sample.
+  the schema variable should not be in the json file. it should have the { "title":"title", ... } in it. 
+  import it this way: 
+    //assuming you use to do structure from rjsf.
+    import schema from './todo-schema.json';
 
-4. install React Router and make a simple menu with it.
+x 4. install React Router and make a simple menu with it.
 
 npm install --save react-router-dom
 
-5. customize the forms page.
+x 5. customize the forms page. move the form to another js file.  (ToDoForm.js) JSX?
 
-   
+x 6. customize the app component to work as a parent (for state) (start using crud tutorial and some sample data that complies)
+x 7. create a listing page generically off the json-schema using double key concept
+8. create generic state management (one flux action, dispatcher and store chain)
+9. have actions and stores do transactions and loads respectively and test it.
 
-6. customize the app component to work as a parent.
-7. create a listing page generically off the json-schema using double key concept
-8. customize the app component to manage state generically.
-9. create generic state management (one flux action, dispatcher and store chain)
-10. have actions and stores do transactions and loads respectively and test it.
-11. using the same json-schema, create a simple api and document store. (update to database as needed).
+10. using the same json-schema, create a simple api and document store. (update to database as needed).
+  https://medium.com/@devmrin/create-a-rest-api-json-server-in-less-than-1-minute-acf286600f03
 
 Other custom things:
 
 https://react.rocks/tag/Form?show=40
 
+look at readonly dynamic table (bootstrap?)
+
 look at edit grids, calendars, etc
+
+
+
+
+Notes:
+
+SCHEMA INLINE Object or JSON:
+It's less characters to type (double quotes) to have a Javascript Object than a JSON Schema file
+but the JSON Schema file is easier to reuse outside of the component that way.
+e.g.:
+
+const schema = {
+  title: "Todo",
+  type: "object",
+  required: ["title"],
+  properties: {
+    title: {type: "string", title: "Title", default: "A new task"},
+    done: {type: "boolean", title: "Done?", default: false}
+  }
+};
+--------------
+{
+  "title": "Todo",
+  "type": "object",
+  "required": ["title"],
+  "properties": {
+    "title": { "type": "string", "title": "Title", "default": "A new task" },
+    "done": { "type": "boolean", "title": "Done?", "default": false }
+  }
+}
