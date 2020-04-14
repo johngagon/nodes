@@ -10,7 +10,9 @@ import GeneralList from './GeneralList';
 import GeneralForm from './GeneralForm';
 import schema from './todo-schema.json';
 import initData from './init-data.json';
-import common from './util/common';
+//Testing libraries off and on.
+//import common from './util/common';
+//import SqlText from './dapi/sqltext';
 
 /* 
 e.g.:
@@ -86,7 +88,11 @@ export default function App() {
 // You can think of these components as "pages"
 // in your app.
 function About() {
-  const result = common._testSimpleParse();
+  //start testing framework
+  //const result = common._testSimpleParse();
+  //const result = JSON.stringify(SqlText.createSchema('./todo-schema.json'));
+  const result = 'Hello from John Gagon.';
+
   return (
     <div>
       <h2>About</h2>

@@ -1,0 +1,10 @@
+{
+  "title": "Todo",
+  "description": "This file is public for the schema reader: json-schema-ref-parser. It doesnt work here because it lacks items required props or entities. this is too improper a format for the parser",
+  "type": "object",
+  "required": ["title"],
+  "properties": {
+    "title": { "type": "string", "title": "Title", "default": "" },
+    "done": { "type": "boolean", "title": "Done?", "default": false }
+  }
+}
