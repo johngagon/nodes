@@ -29,7 +29,7 @@ function callApi(method, url) {
 }
 
 export default function App() {
- 
+  console.log('App rendering');
   const toDoSchema = schema;
   const [data, setData] = useState(initData.rows);
 
