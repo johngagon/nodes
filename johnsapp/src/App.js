@@ -10,6 +10,7 @@ import GeneralList from './GeneralList';
 import GeneralForm from './GeneralForm';
 import schema from './todo-schema.json';
 import initData from './init-data.json';
+import common from './util/common';
 
 /* 
 e.g.:
@@ -34,8 +35,9 @@ export default function App() {
   const [data, setData] = useState(initData.rows);
 
   return (
-    <Router>
+    <Router basename="/">
       <div>
+        <h2>General App Main Menu</h2><br/><hr/>
         <ul>
           <li>
             <Link to="/list">GeneralList</Link>
@@ -45,6 +47,9 @@ export default function App() {
           </li>          
           <li>
             <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/">Main</Link>
           </li>
         </ul>
 
@@ -81,9 +86,11 @@ export default function App() {
 // You can think of these components as "pages"
 // in your app.
 function About() {
+  const result = common._testSimpleParse();
   return (
     <div>
       <h2>About</h2>
+      <p>{result}</p>
     </div>
   );
 }
