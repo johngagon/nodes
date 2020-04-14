@@ -1,5 +1,5 @@
 {
-  "title": "Todo",
+  "title": "todo",
   "type": "object",
   "required": ["title"],
   "properties": {

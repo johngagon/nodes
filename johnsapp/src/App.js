@@ -11,10 +11,27 @@ import GeneralForm from './GeneralForm';
 import schema from './todo-schema.json';
 import initData from './init-data.json';
 
+/* 
+e.g.:
+POST:  /todo (body {})  200 body {id:}             //can't add, (not unique somehow)
+GET:   /todo,           200 body {[{},{},..]} 
+GET"   /todo/:id        200 body {{}}
+DELETE /todo/:id        200                        //can't find
+PUT    /todo/:id        200                        //can't find, can't do
+
+TODO implement real api call
+*/
+function callApi(method, url) {
+  const apiCall = () => ({statusCode:200, body:{}});
+  const result = apiCall();
+  console.log(`${method}  ${url}  :`, result);
+  return result;
+}
+
 export default function App() {
  
   const toDoSchema = schema;
-  const [data, setData] = useState(initData.rows); //can wrap setData or hook
+  const [data, setData] = useState(initData.rows);
 
   return (
     <Router>
@@ -42,6 +59,7 @@ export default function App() {
               schema={toDoSchema}
               data={data}
               setData={setData}
+              callApi={callApi}
             />
           </Route>
           <Route path="/add">

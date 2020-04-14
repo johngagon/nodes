@@ -6,23 +6,19 @@ import {
   Link
 } from "react-router-dom";
 import GeneralForm from './GeneralForm';
+import methods from './methods';
+const {DELETE} = methods;
 
 class GeneralList extends React.Component {
 
   onDelete(idx) {
-    const {data, setData} = this.props;
+    const {schema, data, setData, callApi} = this.props;
     const newData = data.filter((item, index) => {
       return index !== idx;
     });
-    setData(data => newData); //TODO use the schema main title attribute e.g.: todo to construct RESTful calls. see submit calls in form.
-    /* 
-    e.g.:
-    POST:  /todo (body {})  200 body {id:}             //can't add, (not unique somehow)
-    GET:   /todo,           200 body {[{},{},..]} 
-    GET"   /todo/:id        200 body {{}}
-    DELETE /todo/:id        200                        //can't find
-    PUT    /todo/:id        200                        //can't find, can't do
-    */
+    setData(data => newData);
+    const delUrl = `${schema.title}/${idx}`;
+    callApi(DELETE, delUrl);
   }
 
   render() {
