@@ -59,14 +59,20 @@ x 5. customize the forms page. move the form to another js file.  (ToDoForm.js) 
 x 6. customize the app component to work as a parent (for state) (start using crud tutorial and some sample data that complies)
 x 7. create a listing page generically off the json-schema using double key concept
 8. create generic state management (one flux action, dispatcher and store chain)
-9. have actions and stores do transactions and loads respectively and test it.
+  have onSubmit actually update the data.
+  x add a create with empty link
+  have done do readOnly.
 
-10. using the same json-schema, create a simple api and document store. (update to database as needed).
+9. using the same json-schema, create a simple api and document store. (update to database as needed).
   https://medium.com/@devmrin/create-a-rest-api-json-server-in-less-than-1-minute-acf286600f03
+
 
 Other custom things:
 
 https://react.rocks/tag/Form?show=40
+
+
+10. have actions and stores do transactions and loads respectively and test it.
 
 look at readonly dynamic table (bootstrap?)
 
