@@ -17,13 +17,13 @@ class GeneralList extends React.Component {
       return index !== idx;
     });
     setData(data => newData);
-    const delUrl = `${schema.title}/${idx}`;
+    const delUrl = `${schema.title.toLowerCase()}/${idx}`;
     callApi(DELETE, delUrl);
   }
 
   render() {
     const {schema, data, setData, callApi} = this.props;
-    const getUrl = `${schema.title}`;
+    const getUrl = `${schema.title.toLowerCase()}`;
     callApi(GET, getUrl);
 
     const renderedList = data.map((row, idx) => {

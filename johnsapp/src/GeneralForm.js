@@ -17,11 +17,11 @@ class GeneralForm extends React.Component {
         return index === found ? formData : item;
       });
       setData(data => newData);
-      const getUrl = `${schema.title}`;
+      const getUrl = `${schema.title.toLowerCase()}`;
       callApi(PUT, getUrl);      
     }else{
       setData(data => data.concat(formData));
-      const getUrl = `${schema.title}`;
+      const getUrl = `${schema.title.toLowerCase()}`;
       callApi(POST, getUrl);      
     }
     console.log("Data submitted: ",  formData);
