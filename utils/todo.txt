@@ -1,0 +1,64 @@
+
+common needs for records
+
+
+compare records: 
+  property by property, propertyUpdated
+  diff haveProperty  (object1{}, object2{}) 
+    {a: b: d: } {a: b: c: e:}
+        : [[c,e],[d]]
+        : [[]],[]]
+  sameProperties (object{}, object{})
+  
+  
+
+  diff valueChanged (object1{}, object2{})  (must be defined and have same properties)
+          {a:1,b:2,c:3,d:4,e:5}, {a:1,b:2,c:7,d:4,e:6} -> [c,e]
+       valueChanged (tuple1[], tuple2[]) (defined and same length) 
+          [1,2,3,4,5], [1,2,7,4,6] -> [2,4]
+      
+  updateObject(existingRecord, updatedPropertesObject) -> updatedRecord
+  existingRecord still exists for rolling back.
+
+
+
+
+js array:
+
+contains()
+includes(v)
+
+group, some, every, any/all only
+
+
+some(f)->b
+every(f)->b
+
+concat (add)
+find (first)
+filter (delete,subtract)
+splice (update)
+fill(v) (clears)
+map
+reduce, reduceRight
+forEach
+
+
+pop,push,fill,shift,unshift
+
+
+peek,
+poke,
+shift, pop
+unshift, push
+
+clear (empty)
+fill (update values)
+from (add)
+
+has/get
+indexOf
+lastIndexOf
+
+sort
+

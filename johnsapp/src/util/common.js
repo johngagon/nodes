@@ -15,6 +15,14 @@ const common = {
     return result;
   },
 
+  mirror(strList) {
+    let rv = {};
+    strList.forEach(val => {
+      rv[val] = val;
+    });
+    return Object.freeze(rv);
+  },
+
   _testArraysToObjects(){
     const columns = ["Date", "Number", "Size", "Location", "Age"];
 
@@ -31,7 +39,16 @@ const common = {
     const str = '2001, 5, Big, Sydney, 25';
     const result = this.simpleParse(str);
     return JSON.stringify(result);
+  },
+
+  _testMirror(){
+    const strArr = ['APPLE', 'BANANA', 'CHERRY'];
+    const enumObj = this.mirror(strArr);
+    console.log(enumObj);
+    return JSON.stringify(enumObj);
   }
+
+  
 };
 
 export default common;

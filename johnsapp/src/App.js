@@ -11,16 +11,16 @@ import GeneralForm from './GeneralForm';
 import schema from './todo-schema.json';
 import initData from './init-data.json';
 //Testing libraries off and on.
-//import common from './util/common';
+import common from './util/common';
 //import SqlText from './dapi/sqltext';
 
 /* 
 e.g.:
-POST:  /todo (body {})  200 body {id:}             //error -> e.g.: can't add, (not unique somehow)
-GET:   /todo,           200 body {[{},{},..]} 
-GET"   /todo/:id        200 body {{}}
-DELETE /todo/:id        200                        //error -> e.g.: can't find
-PUT    /todo/:id        200                        //error -> e.g.: can't find, can't update
+POST:  /todo/ (body {})  200 body {id:}             //error -> e.g.: can't add, (not unique somehow)
+GET:   /todo/,           200 body {[{},{},..]} 
+GET"   /todo/:id/        200 body {{}}
+DELETE /todo/:id/        200                        //error -> e.g.: can't find
+PUT    /todo/:id/        200                        //error -> e.g.: can't find, can't update
 
 TODO implement real api call
 */
@@ -91,7 +91,7 @@ function About() {
   //start testing framework
   //const result = common._testSimpleParse();
   //const result = JSON.stringify(SqlText.createSchema('./todo-schema.json'));
-  const result = 'Hello from John Gagon.';
+  const result = common._testMirror();//'Hello from John Gagon.';
 
   return (
     <div>
