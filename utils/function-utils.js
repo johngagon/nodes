@@ -125,7 +125,6 @@ module.exports = {
   flip,
   fold,
   forEach,
-  from,
   get,
   join,
   multiply,

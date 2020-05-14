@@ -33,5 +33,6 @@ const minus = (firstArr, secondArr) => {
 
 module.exports = {
   intersection,
+  minus,
   union
 };

@@ -2,6 +2,7 @@ console.log('hi');
 
 const {average, select} = require('./function-utils');
 const {query} = require('./query');
+const {isAlphaNumeric} = require('./regex-utils');
 
 const greets = [{a:'hi',b:'john',c:'gagon'}, {a:'greetings',b:'ray', c:'lavalley'}];
 

@@ -1,5 +1,17 @@
 'use strict'; 
 
+//Selling
+/*
+assumes concepts of humans and finances
+humans have to receive (earn/gifted) money in some form, have, 
+humans have to be able to own good
+discrete goods or items in list of owned things and quantity, individualized or 
+indistinguishable.
+needs to identify from princeton's derivatives and synonyms semantically and forms
+
+*/
+
+
 const clone = (obj) => {
   return JSON.parse(JSON.stringify(obj));
 }
