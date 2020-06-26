@@ -68,11 +68,11 @@ const selling = {
 */
 
 const sell = (seller, buyer, good, price) => {
-  const good = seller.goods.find(item => item.name === good);
+  const _good = seller.goods.find(item => item.name === good);
   const buyerHasFunds = hasMoney(buyer, price);
   const seller_clone = clone(seller);
   const buyer_clone = clone(buyer);
-  if(good && buyerHasFunds) {
+  if(_good && buyerHasFunds) {
     buyer_clone.goods.push(good);
     seller_clone.goods = seller.filter(item => item.name !== good);
     seller_clone.funds = adjustMoney(buyer.funds, price);

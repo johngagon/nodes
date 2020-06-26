@@ -211,3 +211,93 @@ awake, bad, bent, bitter, blue, certain, cold, complete, cruel, dark, dead, dear
 
 
 */
+
+/*
+
+TODO :
+
+1. learn how to find new words in escalating manner:
+  local dictionary, online dictionary, wikipedia, urban dictionary, google (only read results), ask for help
+
+add word to dictionary with simplest definition. infer category or ask where it belongs hierarchically high low/guess.
+
+2. create frequency and frequency near pairs and triples and rank associations. ask about frequent associations and 
+  infer pattern to form question. "There are many associations that start with 'an' like 'an apple'. What should I do with this?
+       Choices could be to: a) ignore an and never pair  b) provide associations (one, typical) - implies no one will inquire about the identity or specifics of the apple.
+
+3. identify the part of speech of each pair and associate intuitively.
+     red nose     adjective noun      (all objects have color/colorable usually so..) Ask, up to which class if not known this noun can have color.
+         Can answer what color noses can be or same as  (sight learning given for most objects)
+
+     make out     verb preposition     needs a third 
+
+so each additional frequency count makes this common understanding, phrase or concept which can be discussed.
+sort frequency descending. any unique pairs may be insignificant and may cause supervised tweaking of program.
+
+Functionality:
+
+spider
+parse
+lookup
+associate
+learning how to ask good questions and asking (ai infancy) in deductive manner to create fact relationships.
+
+(initially will need to teach questions to ask:
+
+  is it locally discrete?
+  what kind is it?
+  
+  of what interest is it? (is it of little interest, just know that it concurs/associates), 
+
+  what is unusual?
+
+  what basic actions can it do? (and how well/what conditons?)
+
+  what other things associate? (by events, places).
+
+  when and where found?
+
+  is it rare or common? 
+    when is the discovery for?
+    what local range is the discovery?  (everywhere?)  helium, Lucy? etc.
+    how many are there?
+    is it made up of parts or a material? 
+      which parts are known? which materials?  (it doesn't need to know chemistry).
+    what range is its size?
+    
+    what qualities can you provide? 
+
+  should it have a reference? properness?
+  how many adjectives can you describe it with?
+  
+question trees for new words or phrases
+
+asking about the sense of ambiguous sense words. internally, it makes these words qualified and specific 
+and links the specific words to their assocations/relationships.
+
+material, class or instance? named/proper? 
+class "is"
+compositions "made of" (materials, parts)
+associations "associated with" (by frequency and nearness)
+inherited descriptions
+specific physics and differentiations by quality, parts, actions, (behaviors/capabilities)
+potential actions
+specific members.
+
+events of
+claims about
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+*/

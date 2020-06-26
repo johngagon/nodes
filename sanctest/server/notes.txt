@@ -1,0 +1,41 @@
+
+
+https://github.com/franzskuffka/elm-webpack-starter-1
+
+https://itnext.io/resilient-javascript-with-sanctuary-858bf3ca1790
+https://mostly-adequate.gitbooks.io/mostly-adequate-guide/ch03.html#8th-grade-math
+https://vimeo.com/97344498
+https://medium.com/@david.komer/a-functional-javascript-stack-2019-6f80c8600bda
+https://github.com/calmm-js/partial.lenses#getting-started 
+
+
+{
+  "name": "xstate-react-template",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@xstate/react": "0.8.1",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-scripts": "3.0.1",
+    "xstate": "4.9.1"
+  },
+  "devDependencies": {
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
+https://codesandbox.io/s/xstate-react-template-3t2tg?file=/package.json:0-604

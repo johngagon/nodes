@@ -4,6 +4,30 @@ const _ = require('lodash');
 deep freeze
 deep clone
 builder
+
+diff
+diffStructure only
+shallowdiff
+hasFunctions / get all functions
+various sorts (asc/desc)
+json to and from (print json as object)
+
+"classes"/interfaces - verbs classes can do. "fact modeling", "hypothetical fact modeling (wish to, capable of)"
+
+merge together (sort)
+
+Sets of objects
+intersection union diff
+
+array of objects
+uniqueValues for value of key in list of objects
+types of splicing arrays
+
+object filtering
+object grouping/aggregation (types of reduce)
+types of splicing arrays
+
+
 */
 const builder = () => {
   /*

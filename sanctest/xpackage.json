@@ -1,0 +1,17 @@
+{
+  "name": "sanctest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fluture": "^12.3.1",
+    "sanctuary": "^3.0.0",
+    "xstate": "^4.10.0"
+  }
+}

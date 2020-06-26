@@ -85,12 +85,24 @@ describe('array', () => {
     });
   });
   
+  describe('copyWithin', () => {
+    it('passes', () => {
+      expect(true).to.be.true;
+    });
+  });
+
 });
 
 /*
 .length
 .constructor
 .prototype
+
+describe('desc', () => {
+  it('passes', () => {
+    expect(true).to.be.true;
+  });
+});
 
 concat()	Joins two or more arrays, and returns a copy of the joined arrays
 copyWithin()	Copies array elements within the array, to and from specified positions

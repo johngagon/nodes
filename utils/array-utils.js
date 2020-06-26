@@ -30,9 +30,14 @@ const minus = (firstArr, secondArr) => {
   return Array.from(resultSet);
 };
 
+const unique = (arr) => {
+  const uniqueArray = [...new Set(arr)];
+  return uniqueArray;
+}
 
 module.exports = {
   intersection,
   minus,
-  union
+  union,
+  unique
 };
