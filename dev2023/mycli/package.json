@@ -1,0 +1,23 @@
+{
+  "name": "mycli",
+  "version": "1.0.0",
+  "description": "main hook for module cli use",
+  "bin": {
+    "cli": "./index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "John H. Gagon",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^9.4.1",
+    "conf": "^10.2.0",
+    "models": "file:../models"
+  }
+}
