@@ -1,0 +1,22 @@
+[
+  {
+    "address_id": 1,
+    "line": 1,
+    "linedata": "--"
+  },
+  {
+    "address_id": 2,
+    "line": 1,
+    "linedata": "222 Portland St."
+  },
+  {
+    "address_id": 3,
+    "line": 1,
+    "linedata": "223 Portland St."
+  },
+  {
+    "address_id": 3,
+    "line": 2,
+    "linedata": "Apt B"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "status": 1,
+    "birthdate": "--",
+    "email": "--",
+    "phone": "--"
+  },
+  {
+    "id": 2,
+    "status": 2,
+    "birthdate": "1972-02-13",
+    "email": "test@gmail.com",
+    "phone": "4438350311"
+  },
+  {
+    "id": 3,
+    "status": 3,
+    "birthdate": "1977-07-07",
+    "email": "--",
+    "phone": "--"
+  },
+  {
+    "id": 4,
+    "status": 2,
+    "birthdate": "1969-12-16",
+    "email": "test@gmail.com",
+    "phone": "4438382973"
+  }
+]

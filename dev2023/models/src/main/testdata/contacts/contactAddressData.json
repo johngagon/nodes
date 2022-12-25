@@ -1,0 +1,14 @@
+[
+  {
+    "contact_id": 2,
+    "address_id": 2
+  },
+  {
+    "contact_id": 3,
+    "address_id": 3
+  },
+  {
+    "contact_id": 4,
+    "address_id": 2
+  }
+]

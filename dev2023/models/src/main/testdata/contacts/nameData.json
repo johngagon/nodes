@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "status": "ROOT",
+    "contact_id": 1,
+    "firstName": "--",
+    "middleName": "--",
+    "familySurname": "--",
+    "suffix": "--",
+    "surname": "--"
+  },
+  {
+    "id": 2,
+    "status": "COMPLETE",
+    "contact_id": 2,
+    "firstName": "John",
+    "middleName": "Hyland",
+    "familySurname": "Gagon",
+    "suffix": "--",
+    "surname": "LaValley"
+  },
+  {
+    "id": 3,
+    "status": "COMPLETE",
+    "contact_id": 3,
+    "firstName": "Peter",
+    "middleName": "--",
+    "familySurname": "--",
+    "suffix": "--",
+    "surname": "Parker"
+  },
+  {
+    "id": 4,
+    "status": "COMPLETE",
+    "contact_id": 4,
+    "firstName": "Ray",
+    "middleName": "Laurel",
+    "familySurname": "LaValley",
+    "suffix": "--",
+    "surname": "Gagon"
+  }  
+]

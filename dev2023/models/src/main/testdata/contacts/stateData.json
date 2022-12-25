@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "status": 1,
+    "country_id": 1,
+    "state": "--"
+  },
+  {
+    "id": 2,
+    "status": 2,
+    "country_id": 2,
+    "state": "MD"
+  }
+]

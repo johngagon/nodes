@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "status": "ROOT"
+  },
+  {
+    "id": 2,
+    "status": "COMPLETE"
+  },
+  {
+    "id": 3,
+    "status": "INCOMPLETE"
+  },
+  {
+    "id": 4,
+    "status": "DELETED"
+  }
+]
